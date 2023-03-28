@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"strconv"
 )
 
 func main() {
@@ -15,5 +16,9 @@ func main() {
 	fmt.Println("Testando", area)
 	fmt.Print(a, b)
 	fmt.Println(g, h, i)
-	fmt.Printf("vamos printar a àrea formatando-a %.2f", area)
+	fmt.Printf("vamos printar a àrea formatando-a %.2f ", area)
+	k, _ := strconv.ParseBool("true")
+	if k {
+		fmt.Println("Verdadeiro")
+	}
 }
